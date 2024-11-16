@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: orange;
+}
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+    grid-template-columns: 1fr;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr; /* Dwa równe kolumny */
+    gap: 10px; /* Odstęp między polami */
+    margin-bottom: 20px;
+}
+
+.firstName, .lastName {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateOfBirth {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender {
+    display: block;
+}
+
+.occupation {
+    margin-bottom: 20px;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 15px; /* Odstęp między radio buttonami */
+    flex-wrap: wrap; /* Umożliwia zawijanie, gdy jest za mało miejsca */
+}
+
+.progLang {
+    margin-bottom: 20px;
+}
+
+.checkBoxes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.progLang label {
+    margin-bottom: 5px;
+}
+
+select {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+input:focus {
+    border-color: orange; /* Kolor obramowania przy focus */
+    outline: none; /* Usuwa standardowy outline */
+}
+
+input:invalid {
+    border-color: red; /* Kolor obramowania przy błędnych danych */
+}
